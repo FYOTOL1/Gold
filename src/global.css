@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.Container {
+  max-width: 100%;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .Container {
+    max-width: 1300px;
+  }
+}

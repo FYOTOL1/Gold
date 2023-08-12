@@ -1,0 +1,107 @@
+.section1 {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../../../public/back.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section1::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+}
+.section1::after {
+  content: "";
+  border: 10px solid #b7b7b7;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+}
+.section1 .filter {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(51, 51, 51, 0.3529411765);
+}
+.section1 .rightSide {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../../public/Ramy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section1 .leftSide {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(234, 232, 223)), to(rgba(255, 217, 0, 0.116)));
+  background: linear-gradient(to bottom right, rgb(234, 232, 223), rgba(255, 217, 0, 0.116));
+  color: black;
+}
+.section1 .leftSide .description {
+  margin-top: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+}
+.section1 .leftSide .description h2 {
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+@media (max-width: 814px) {
+  .description {
+    width: 300px !important;
+  }
+  .description h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 676px) {
+  .description {
+    width: 250px !important;
+  }
+  .description h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .description {
+    width: 200px !important;
+  }
+  .description h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px) {
+  .description {
+    width: 170px !important;
+  }
+  .description h2 {
+    font-size: 16px;
+  }
+}

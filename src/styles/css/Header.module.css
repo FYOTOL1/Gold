@@ -1,0 +1,105 @@
+.header {
+  height: 60px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f1f7f5), to(#f7f6f1));
+  background: linear-gradient(to right bottom, #f1f7f5, #f7f6f1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .headerCont {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+.header .headerCont .logo {
+  color: #333;
+  width: 140px;
+}
+.header .headerCont .list {
+  height: 50px;
+  width: 500px;
+}
+.header .headerCont .list ul {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: #333;
+}
+.header .headerCont .list ul li {
+  padding: 0 3px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header .headerCont .list ul li:hover {
+  letter-spacing: 1px;
+}
+.header .headerCont .list ul li a {
+  color: #333 !important;
+}
+
+@media (max-width: 767px) {
+  .header .headerCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .header .headerCont .logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header .headerCont .list {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 310px) {
+  .header .headerCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .header .headerCont .logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 18px;
+  }
+  .header .headerCont .list {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header .headerCont .list ul {
+    font-size: 14px;
+  }
+}

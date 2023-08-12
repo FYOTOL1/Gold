@@ -1,0 +1,106 @@
+.section2 {
+  width: 100%;
+  height: 500px;
+  background-color: #c4c9bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.section2:before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: #b7b7b7;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.section2 .sectionCont {
+  width: 100%;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section2 .sectionCont .leftSide {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.section2 .sectionCont .leftSide .img1 {
+  width: 350px;
+  height: 450px;
+  background-image: url("../../../public/Ramy.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 45% 45% 0 0;
+  margin: 0 auto;
+}
+.section2 .sectionCont .rightSide {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+@media (max-width: 767px) {
+  .img1 {
+    margin-top: 65px !important;
+    width: 250px !important;
+    height: 350px !important;
+  }
+  .rightSide {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 542px) {
+  .section2 {
+    height: 600px !important;
+  }
+  .section2:before {
+    width: 0 !important;
+    height: 0%;
+  }
+  .sectionCont {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center;
+  }
+  .sectionCont .img1 {
+    width: 150px !important;
+    height: 200px !important;
+    margin: 0 auto !important;
+  }
+  .sectionCont .leftSide {
+    margin-top: 0 !important;
+    width: 100% !important;
+  }
+  .sectionCont .rightSide {
+    width: 100% !important;
+  }
+}

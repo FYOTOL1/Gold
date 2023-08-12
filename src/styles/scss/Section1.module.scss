@@ -1,0 +1,101 @@
+.section1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../../../public/back.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+  }
+  &::after {
+    content: "";
+    border: 10px solid #b7b7b7;
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+  }
+  .filter {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #3333335a;
+  }
+  .rightSide {
+    width: 50%;
+    height: 100%;
+    background-image: url("../../../public/Ramy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leftSide {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(
+      to bottom right,
+      rgb(234, 232, 223),
+      rgba(255, 217, 0, 0.116)
+    );
+    color: black;
+    .description {
+      margin-top: 25%;
+      margin-right: auto;
+      margin-left: auto;
+      width: 400px;
+      h2 {
+        margin-top: 50px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 814px) {
+  .description {
+    width: 300px !important;
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 676px) {
+  .description {
+    width: 250px !important;
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .description {
+    width: 200px !important;
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .description {
+    width: 170px !important;
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
